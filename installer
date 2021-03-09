@@ -1,22 +1,16 @@
 #!/bin/bash
 clear;echo "######################################"
-echo -e "   Auto installer Xderm-mini GUI\n######################################\n"
+echo -e "   By Abd Rozi\n######################################\n"
 echo "Installing, Tunggu....."
 mkdir -p /www/xderm /www/xderm/js /www/xderm/img /www/xderm/log
 url="https://raw.githubusercontent.com/rozyprojext/xderm-mini1/main"
-wget -O /www/xderm/index.php $url/index.php -q
 wget -O /www/xderm/index.html $url/index.html -q
-wget -O /www/xderm/xderm-mini $url/xderm-mini -q
-wget -O /www/xderm/login.php $url/login.php -q
 wget -O /www/xderm/header.php $url/header.php -q
 wget -O /www/xderm/config.txt $url/config.txt -q
 wget -O /www/xderm/js/jquery-2.1.3.min.js $url/jquery-2.1.3.min.js -q
 wget -O /www/xderm/img/image.png $url/image.png -q
 wget -O /www/xderm/img/fav.ico $url/fav.ico -q
 echo Start > /www/xderm/log/st
-echo -e "user=root\npasswd=root" > /root/auth.txt
-echo -e "xderm-mini GUI terinstall.\n\nSilahkan Akses 'http://192.168.1.1/xderm'"
-echo -e "Default Authentication\nUsername: root\nPassword: root\n"
-echo -e "Untuk mengganti U/P silahkan edit /root/auth.txt"
+echo -e "SUKSES 100 % . . .\n\nSilahkan Akses 'http://192.168.1.1/xderm'"
 echo "Jangan lupa setting config dulu di webui nya."
 echo "Terima kasih -rosyprojext."
